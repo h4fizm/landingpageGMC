@@ -84,6 +84,227 @@ body {
 }
 
 /* --------------------------------------------
+   Mobile Menu Button (Burger) Styles
+   -------------------------------------------- */
+.mobile-menu-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.mobile-menu-line {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: linear-gradient(135deg, #ff0080 0%, #7928ca 100%);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobile-menu-line.top-line {
+  top: 8px;
+}
+
+.mobile-menu-line.middle-line {
+  top: 14px;
+}
+
+.mobile-menu-line.bottom-line {
+  top: 20px;
+}
+
+/* Burger to X Animation */
+.mobile-menu-btn.active .top-line {
+  transform: translateX(-50%) rotate(45deg);
+  top: 14px;
+}
+
+.mobile-menu-btn.active .middle-line {
+  opacity: 0;
+  transform: translateX(-50%) translateX(-10px);
+}
+
+.mobile-menu-line.bottom-line {
+  width: 24px;
+}
+
+.mobile-menu-btn.active .bottom-line {
+  transform: translateX(-50%) rotate(-45deg);
+  top: 14px;
+}
+
+/* --------------------------------------------
+   Mobile Menu Overlay & Content
+   -------------------------------------------- */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 40;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  max-width: 320px;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  padding: 100px 32px 40px;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  overflow-y: auto;
+  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu-overlay.active .mobile-menu-content {
+  transform: translateX(0);
+}
+
+/* Mobile Menu Links */
+.mobile-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1e293b;
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.mobile-menu-link:hover {
+  color: #ff0080;
+  padding-left: 12px;
+}
+
+.mobile-menu-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: #64748b;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-link:hover .mobile-menu-icon {
+  color: #ff0080;
+  transform: scale(1.1);
+}
+
+/* Mobile Dropdown */
+.mobile-dropdown {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.mobile-dropdown-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  background: transparent;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.mobile-dropdown-toggle:hover {
+  color: #ff0080;
+}
+
+.mobile-dropdown-toggle:hover .mobile-menu-icon {
+  color: #ff0080;
+  transform: scale(1.1);
+}
+
+.mobile-dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.mobile-dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  background: #f1f5f9;
+  border-radius: 12px;
+  margin-bottom: 0;
+}
+
+.mobile-dropdown.active .mobile-dropdown-menu {
+  max-height: 400px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.mobile-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.mobile-dropdown-item:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-dropdown-item:hover {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateX(4px);
+}
+
+/* Mobile CTA Button */
+.mobile-cta-btn {
+  display: block;
+  background: linear-gradient(135deg, #ff0080 0%, #7928ca 100%);
+  color: white;
+  text-align: center;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 0, 128, 0.3);
+}
+
+.mobile-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 0, 128, 0.4);
+}
+
+/* --------------------------------------------
    Hero Section Styles
    -------------------------------------------- */
 .hero-section {
