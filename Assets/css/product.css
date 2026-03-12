@@ -69,3 +69,30 @@ table td {
 .nav-link:hover {
   color: #f97316; /* Orange */
 }
+
+/* Vehicle Installation Section Animations */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animate-dash {
+  animation: dash 2s linear infinite;
+}
+
+/* Pulse Animation for Signal Waves */
+@keyframes signal-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.signal-wave {
+  animation: signal-pulse 1.5s ease-out infinite;
+}

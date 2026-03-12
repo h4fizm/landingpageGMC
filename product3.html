@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Aruna 25 - Detail Produk | GMC</title>
+    <title>Nakula Dianggo - Detail Produk | GMC</title>
 
     <link rel="icon" type="image/png" href="Assets/Image/icon.png" />
 
@@ -125,7 +125,7 @@
                   class="w-12 h-12 rounded-xl flex items-center justify-center overflow-hidden flex-shrink-0"
                 >
                   <img
-                    src="Assets/Image/df.jpeg"
+                    src="Assets/Image/DF/nakula.png"
                     alt="Nakula Dianggo"
                     class="w-full h-full object-cover"
                   />
@@ -273,7 +273,7 @@
                   class="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0"
                 >
                   <img
-                    src="Assets/Image/df.jpeg"
+                    src="Assets/Image/DF/nakula.png"
                     alt="Nakula Dianggo"
                     class="w-full h-full object-cover"
                   />
@@ -365,11 +365,42 @@
             data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <img
-              src="Assets/Image/df.jpeg"
-              alt="Nakula Dianggo Main View"
-              class="w-full max-w-md mx-auto h-auto relative z-10 drop-shadow-2xl"
-            />
+            <div class="relative">
+              <!-- Main Image - Smaller for mobile -->
+              <img
+                src="Assets/Image/DF/nakula.png"
+                alt="Nakula Dianggo Main View"
+                class="w-64 max-w-xs mx-auto h-auto relative z-10 drop-shadow-2xl"
+              />
+              <!-- Mobile Decorative Icons -->
+              <div class="absolute -top-2 -left-2 z-20 animate-pulse">
+                <svg
+                  class="w-8 h-8 text-blue-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="absolute -top-2 -right-2 z-20 animate-pulse"
+                style="animation-delay: 0.3s"
+              >
+                <svg
+                  class="w-8 h-8 text-yellow-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+              </div>
+            </div>
           </div>
 
           <div
@@ -380,7 +411,7 @@
             <span
               class="inline-block px-4 py-1 rounded-full bg-orange-600/10 text-orange-600 text-xs font-bold uppercase tracking-widest mb-6 border border-orange-500/30"
             >
-              RADIO DIRECTION FINDER
+              SDR-BASED DIRECTION FINDER
             </span>
             <h1
               class="text-5xl lg:text-7xl font-black text-slate-900 mb-6 uppercase leading-tight"
@@ -390,17 +421,24 @@
             <p
               class="text-xl text-slate-600 leading-relaxed mb-10 max-w-xl text-justify"
             >
-              Sistem deteksi sinyal radio frekuensi tinggi untuk pengawasan
-              keamanan dan monitoring wilayah udara.
+              Sistem berbasis SDR yang mampu melakukan pemindaian identitas
+              perangkat seluler dan pelokalan posisi ponsel pada jaringan
+              seluler dalam rentang frekuensi 700–2700 MHz.
             </p>
 
             <div
-              class="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-10 border-l-4 border-orange-500 pl-6"
+              class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 border-l-4 border-orange-500 pl-6"
             >
               <div>
-                <div class="text-slate-900 font-bold text-2xl">4 Channel</div>
+                <div class="text-slate-900 font-bold text-2xl">700-2700</div>
                 <div class="text-xs uppercase text-slate-500 font-bold">
-                  Antena
+                  MHz Range
+                </div>
+              </div>
+              <div>
+                <div class="text-slate-900 font-bold text-2xl">SDR</div>
+                <div class="text-xs uppercase text-slate-500 font-bold">
+                  Technology
                 </div>
               </div>
               <div>
@@ -482,116 +520,549 @@
             <!-- Glow effect -->
             <div class="product-glow"></div>
 
-            <!-- Geometric Design Elements -->
-            <!-- Circles -->
-            <div
-              class="absolute top-8 left-8 w-16 h-16 border-2 border-orange-500/30 rounded-full"
-            ></div>
-            <div
-              class="absolute top-12 left-12 w-12 h-12 border-2 border-red-500/20 rounded-full"
-            ></div>
-            <div
-              class="absolute bottom-16 right-8 w-24 h-24 border-2 border-pink-500/25 rounded-full"
-            ></div>
-            
-            <!-- Lines -->
-            <div
-              class="absolute top-1/4 -left-16 w-32 h-0.5 bg-gradient-to-r from-transparent via-orange-500/40 to-transparent rotate-12"
-            ></div>
-            <div
-              class="absolute top-2/3 -right-12 w-24 h-0.5 bg-gradient-to-r from-transparent via-red-500/40 to-transparent -rotate-12"
-            ></div>
+            <!-- Main Image Container with Decorative Elements -->
+            <div class="relative z-10 flex items-center justify-center gap-8">
+              <!-- Left Side - Device Image with Decorations -->
+              <div class="relative">
+                <!-- Glow Effect Behind Device -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-orange-500/40 to-red-500/40 rounded-2xl blur-2xl scale-125"
+                ></div>
 
-            <!-- Main Image -->
-            <img
-              src="Assets/Image/df.jpeg"
-              alt="Nakula Dianggo Main View"
-              class="w-full max-w-2xl mx-auto h-auto relative z-10 drop-shadow-2xl"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ===================== END OF HERO SECTION ===================== -->
+                <!-- Small Main Image -->
+                <img
+                  src="Assets/Image/DF/nakula.png"
+                  alt="Nakula Dianggo Main View"
+                  class="relative w-40 h-40 object-contain drop-shadow-2xl"
+                />
 
-    <!-- =====================================================
-         DESKRIPSI PRODUK SECTION
-         Image Layout
-         ===================================================== -->
-    <section class="py-12 lg:py-24 bg-slate-50">
-      <div class="container mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <!-- Image -->
-          <div data-aos="fade-right" class="relative">
-            <img
-              src="Assets/Image/df.jpeg"
-              alt="Nakula Dianggo"
-              class="rounded-2xl shadow-2xl w-full"
-            />
-          </div>
-
-          <!-- Text Content -->
-          <div data-aos="fade-left">
-            <h4 class="text-orange-500 font-bold uppercase tracking-widest mb-4">
-              Product Overview
-            </h4>
-            <h2
-              class="text-4xl lg:text-5xl font-black text-slate-900 uppercase mb-8 leading-tight"
-            >
-              Nakula <span class="text-orange-500">Dianggo</span>
-            </h2>
-            <p class="text-slate-600 text-lg leading-relaxed mb-8 text-justify">
-              Nakula Dianggo adalah sistem Radio Direction Finder (RDF) portabel
-              yang dirancang untuk deteksi dan pelacakan sinyal radio frekuensi
-              tinggi. Dilengkapi dengan 4 channel antena, sistem ini mampu
-              mendeteksi berbagai jenis sinyal drone dan perangkat komunikasi
-              nirkabel.
-            </p>
-            <p class="text-slate-600 text-lg leading-relaxed mb-8 text-justify">
-              Dengan desain tas ransel yang praktis, Nakula Dianggo mudah
-              dibawa dan dioperasikan di lapangan. Cocok untuk aplikasi
-              pengawasan keamanan, monitoring wilayah udara, dan operasi
-              anti-drone.
-            </p>
-            <div
-              class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-slate-200"
-            >
-              <div>
-                <div class="text-2xl sm:text-3xl font-black text-orange-600 mb-1">
-                  4
+                <!-- Corner Decorations -->
+                <div class="absolute -top-3 -left-3 z-20">
+                  <div
+                    class="absolute inset-0 bg-blue-500/30 rounded-full blur-md"
+                  ></div>
+                  <svg
+                    class="relative w-8 h-8 text-blue-500 animate-pulse"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                    ></path>
+                  </svg>
                 </div>
-                <div class="text-xs font-bold text-slate-500 uppercase">
-                  Channel Antena
+                <div class="absolute -top-3 -right-3 z-20">
+                  <div
+                    class="absolute inset-0 bg-yellow-500/30 rounded-full blur-md"
+                  ></div>
+                  <svg
+                    class="relative w-8 h-8 text-yellow-500 animate-pulse"
+                    style="animation-delay: 0.3s"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                  </svg>
+                </div>
+                <div class="absolute -bottom-3 -left-3 z-20">
+                  <div
+                    class="absolute inset-0 bg-green-500/30 rounded-full blur-md"
+                  ></div>
+                  <svg
+                    class="relative w-8 h-8 text-green-500 animate-pulse"
+                    style="animation-delay: 0.5s"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M4 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="absolute -bottom-3 -right-3 z-20">
+                  <div
+                    class="absolute inset-0 bg-purple-500/30 rounded-full blur-md"
+                  ></div>
+                  <svg
+                    class="relative w-8 h-8 text-purple-500 animate-pulse"
+                    style="animation-delay: 0.2s"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                    ></path>
+                  </svg>
+                </div>
+
+                <!-- Signal Waves Animation -->
+                <div class="absolute inset-0 pointer-events-none">
+                  <div
+                    class="absolute top-0 -right-6 w-16 h-16 border-2 border-orange-500/30 rounded-full animate-ping"
+                  ></div>
+                  <div
+                    class="absolute bottom-0 -left-6 w-12 h-12 border-2 border-red-500/30 rounded-full animate-ping"
+                    style="animation-delay: 0.5s"
+                  ></div>
                 </div>
               </div>
-              <div>
-                <div
-                  class="text-2xl sm:text-3xl font-black text-red-600 mb-1"
-                >
-                  Portable
+
+              <!-- Right Side - BTS Tower + Wave/Electricity Decorations -->
+              <div class="relative flex flex-col items-center gap-3">
+                <!-- BTS Tower Illustration -->
+                <div class="relative">
+                  <div
+                    class="absolute inset-0 bg-blue-500/30 rounded-full blur-2xl scale-150"
+                  ></div>
+                  <svg
+                    class="relative w-32 h-40 text-blue-600"
+                    viewBox="0 0 100 120"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <!-- Tower Base -->
+                    <path
+                      d="M50 10 L70 110 L30 110 Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      opacity="0.6"
+                    />
+                    <!-- Tower Structure Lines -->
+                    <line
+                      x1="50"
+                      y1="10"
+                      x2="50"
+                      y2="110"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      opacity="0.4"
+                    />
+                    <line
+                      x1="40"
+                      y1="30"
+                      x2="60"
+                      y2="30"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      opacity="0.5"
+                    />
+                    <line
+                      x1="38"
+                      y1="50"
+                      x2="62"
+                      y2="50"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      opacity="0.5"
+                    />
+                    <line
+                      x1="36"
+                      y1="70"
+                      x2="64"
+                      y2="70"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      opacity="0.5"
+                    />
+                    <line
+                      x1="34"
+                      y1="90"
+                      x2="66"
+                      y2="90"
+                      stroke="currentColor"
+                      stroke-width="1"
+                      opacity="0.5"
+                    />
+                    <!-- Antenna at Top -->
+                    <line
+                      x1="50"
+                      y1="5"
+                      x2="50"
+                      y2="0"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <circle
+                      cx="50"
+                      cy="0"
+                      r="3"
+                      fill="currentColor"
+                      class="animate-pulse"
+                    />
+                    <!-- Signal Waves from Tower -->
+                    <path
+                      d="M55 15 Q70 20 75 30"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      opacity="0.6"
+                      class="animate-pulse"
+                    />
+                    <path
+                      d="M45 15 Q30 20 25 30"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      opacity="0.6"
+                      class="animate-pulse"
+                      style="animation-delay: 0.3s"
+                    />
+                    <path
+                      d="M58 25 Q78 35 85 50"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      opacity="0.4"
+                      class="animate-pulse"
+                      style="animation-delay: 0.6s"
+                    />
+                    <path
+                      d="M42 25 Q22 35 15 50"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      opacity="0.4"
+                      class="animate-pulse"
+                      style="animation-delay: 0.9s"
+                    />
+                  </svg>
                 </div>
-                <div class="text-xs font-bold text-slate-500 uppercase">
-                  Backpack Design
+
+                <!-- Electricity/Wave Decorations Below BTS -->
+                <div class="flex gap-4 items-center">
+                  <!-- Left Wave -->
+                  <div class="relative">
+                    <div
+                      class="absolute inset-0 bg-orange-500/20 rounded-full blur-lg"
+                    ></div>
+                    <svg
+                      class="w-16 h-16 text-orange-500 opacity-60 animate-pulse"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M4 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"
+                      />
+                    </svg>
+                  </div>
+                  <!-- Center Bolt -->
+                  <div class="relative">
+                    <div
+                      class="absolute inset-0 bg-yellow-500/30 rounded-full blur-lg"
+                    ></div>
+                    <svg
+                      class="w-12 h-12 text-yellow-500 animate-pulse"
+                      style="animation-delay: 0.2s"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                    </svg>
+                  </div>
+                  <!-- Right Wave -->
+                  <div class="relative">
+                    <div
+                      class="absolute inset-0 bg-red-500/20 rounded-full blur-lg"
+                    ></div>
+                    <svg
+                      class="w-16 h-16 text-red-500 opacity-60 animate-pulse"
+                      style="animation-delay: 0.4s"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M4 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Bottom Dots -->
+                <div class="flex gap-2">
+                  <div
+                    class="w-2 h-2 bg-orange-500/60 rounded-full animate-pulse"
+                  ></div>
+                  <div
+                    class="w-2 h-2 bg-blue-500/60 rounded-full animate-pulse"
+                    style="animation-delay: 0.2s"
+                  ></div>
+                  <div
+                    class="w-2 h-2 bg-red-500/60 rounded-full animate-pulse"
+                    style="animation-delay: 0.4s"
+                  ></div>
+                  <div
+                    class="w-2 h-2 bg-yellow-500/60 rounded-full animate-pulse"
+                    style="animation-delay: 0.6s"
+                  ></div>
                 </div>
               </div>
-              <div>
+
+              <!-- Floating Particles Around -->
+              <div
+                class="absolute top-0 left-10 w-2 h-2 bg-orange-500/60 rounded-full animate-pulse"
+              ></div>
+              <div
+                class="absolute top-10 right-10 w-1.5 h-1.5 bg-red-500/60 rounded-full animate-pulse"
+                style="animation-delay: 0.4s"
+              ></div>
+              <div
+                class="absolute bottom-10 left-14 w-2 h-2 bg-pink-500/60 rounded-full animate-pulse"
+                style="animation-delay: 0.6s"
+              ></div>
+              <div
+                class="absolute bottom-0 right-16 w-1.5 h-1.5 bg-orange-500/60 rounded-full animate-pulse"
+                style="animation-delay: 0.2s"
+              ></div>
+
+              <!-- Highlight Cards Around the Image - Desktop Only -->
+              <!-- Top Left Card -->
+              <div class="hidden lg:block absolute -top-16 -left-8 z-30">
                 <div
-                  class="text-2xl sm:text-3xl font-black text-pink-600 mb-1"
+                  class="bg-gradient-to-br from-orange-500 to-red-500 text-white px-5 py-3 rounded-2xl shadow-2xl border border-white/20 transform hover:scale-105 transition duration-300"
                 >
-                  RDF
-                </div>
-                <div class="text-xs font-bold text-slate-500 uppercase">
-                  Technology
+                  <div class="flex items-center gap-2">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      ></path>
+                    </svg>
+                    <div>
+                      <div
+                        class="text-xs font-bold uppercase tracking-wider opacity-80"
+                      >
+                        Advanced
+                      </div>
+                      <div class="text-sm font-black">SDR Technology</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div>
+
+              <!-- Top Right Card -->
+              <div class="hidden lg:block absolute -top-16 -right-4 z-30">
                 <div
-                  class="text-2xl sm:text-3xl font-black text-emerald-600 mb-1"
+                  class="bg-gradient-to-br from-blue-500 to-purple-500 text-white px-5 py-3 rounded-2xl shadow-2xl border border-white/20 transform hover:scale-105 transition duration-300"
                 >
-                  Real-time
+                  <div class="flex items-center gap-2">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      ></path>
+                    </svg>
+                    <div>
+                      <div
+                        class="text-xs font-bold uppercase tracking-wider opacity-80"
+                      >
+                        Precision
+                      </div>
+                      <div class="text-sm font-black">Real-time Detection</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="text-xs font-bold text-slate-500 uppercase">
-                  Detection
+              </div>
+
+              <!-- Bottom Left Card -->
+              <div class="hidden lg:block absolute -bottom-12 -left-12 z-30">
+                <div
+                  class="bg-gradient-to-br from-green-500 to-emerald-500 text-white px-5 py-3 rounded-2xl shadow-2xl border border-white/20 transform hover:scale-105 transition duration-300"
+                >
+                  <div class="flex items-center gap-2">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
+                      ></path>
+                    </svg>
+                    <div>
+                      <div
+                        class="text-xs font-bold uppercase tracking-wider opacity-80"
+                      >
+                        Tactical
+                      </div>
+                      <div class="text-sm font-black">Vehicle Ready</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom Right Card -->
+              <div class="hidden lg:block absolute -bottom-12 -right-8 z-30">
+                <div
+                  class="bg-gradient-to-br from-pink-500 to-rose-500 text-white px-5 py-3 rounded-2xl shadow-2xl border border-white/20 transform hover:scale-105 transition duration-300"
+                >
+                  <div class="flex items-center gap-2">
+                    <svg
+                      class="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                      ></path>
+                    </svg>
+                    <div>
+                      <div
+                        class="text-xs font-bold uppercase tracking-wider opacity-80"
+                      >
+                        Wide Range
+                      </div>
+                      <div class="text-sm font-black">700-2700 MHz</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mobile Highlight Cards - Stacked Below Image -->
+              <div
+                class="lg:hidden grid grid-cols-2 gap-2 mt-6 w-full max-w-sm mx-auto"
+              >
+                <div
+                  class="bg-gradient-to-br from-orange-500 to-red-500 text-white px-3 py-2 rounded-xl shadow-lg border border-white/20"
+                >
+                  <div class="flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      ></path>
+                    </svg>
+                    <div>
+                      <div class="text-[10px] font-bold uppercase opacity-80">
+                        SDR
+                      </div>
+                      <div class="text-xs font-black">Advanced</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-br from-blue-500 to-purple-500 text-white px-3 py-2 rounded-xl shadow-lg border border-white/20"
+                >
+                  <div class="flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      ></path>
+                    </svg>
+                    <div>
+                      <div class="text-[10px] font-bold uppercase opacity-80">
+                        Detection
+                      </div>
+                      <div class="text-xs font-black">Real-time</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-br from-green-500 to-emerald-500 text-white px-3 py-2 rounded-xl shadow-lg border border-white/20"
+                >
+                  <div class="flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"
+                      ></path>
+                    </svg>
+                    <div>
+                      <div class="text-[10px] font-bold uppercase opacity-80">
+                        Vehicle
+                      </div>
+                      <div class="text-xs font-black">Tactical</div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-gradient-to-br from-pink-500 to-rose-500 text-white px-3 py-2 rounded-xl shadow-lg border border-white/20"
+                >
+                  <div class="flex items-center gap-1">
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                      ></path>
+                    </svg>
+                    <div>
+                      <div class="text-[10px] font-bold uppercase opacity-80">
+                        700-2700
+                      </div>
+                      <div class="text-xs font-black">MHz Range</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -599,7 +1070,475 @@
         </div>
       </div>
     </section>
-    <!-- ===================== END OF DESKRIPSI PRODUK SECTION ===================== -->
+    <!-- ===================== END OF HERO SECTION ===================== -->
+
+    <!-- =====================================================
+         VEHICLE INSTALLATION SECTION
+         Showcasing device installed in tactical vehicle
+         ===================================================== -->
+    <section
+      class="py-12 lg:py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden"
+    >
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h4 class="text-orange-500 font-bold uppercase tracking-widest mb-4">
+            Tactical Deployment
+          </h4>
+          <h2 class="text-4xl lg:text-5xl font-black text-slate-900 uppercase">
+            Vehicle <span class="text-orange-500">Installation</span>
+          </h2>
+          <div
+            class="w-20 h-1.5 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 mx-auto mt-6 rounded-full"
+          ></div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Vehicle & Device Visualization -->
+          <div data-aos="zoom-in" class="relative">
+            <!-- Main Container -->
+            <div
+              class="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl p-4 lg:p-10 shadow-2xl border border-slate-200 overflow-hidden min-h-[480px] lg:min-h-[600px]"
+            >
+              <!-- Grid Pattern Background -->
+              <div
+                class="absolute inset-0 opacity-5"
+                style="
+                  background-image: radial-gradient(#000 1px, transparent 1px);
+                  background-size: 20px 20px;
+                "
+              ></div>
+
+              <!-- Decorative Background Elements -->
+              <div
+                class="absolute top-10 left-10 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl"
+              ></div>
+              <div
+                class="absolute bottom-10 right-10 w-40 h-40 bg-red-500/10 rounded-full blur-2xl"
+              ></div>
+
+              <!-- Device Image - Top Center, Smaller -->
+              <div class="relative z-30 flex justify-center mb-2 lg:mb-4">
+                <div class="relative">
+                  <!-- Glow Effect Behind Device -->
+                  <div
+                    class="absolute inset-0 bg-orange-500/30 rounded-2xl blur-2xl scale-110"
+                  ></div>
+
+                  <!-- Device Image - Responsive Size -->
+                  <img
+                    src="Assets/Image/DF/nakula.png"
+                    alt="Nakula Device"
+                    class="relative w-32 h-32 lg:w-48 lg:h-48 object-contain drop-shadow-2xl"
+                  />
+
+                  <!-- Signal Waves Animation -->
+                  <div class="absolute inset-0 pointer-events-none">
+                    <div
+                      class="absolute -top-3 -right-3 w-16 h-16 border-2 border-orange-500/30 rounded-full animate-ping"
+                    ></div>
+                    <div
+                      class="absolute -bottom-3 -left-3 w-12 h-12 border-2 border-red-500/30 rounded-full animate-ping"
+                      style="animation-delay: 0.4s"
+                    ></div>
+                    <div
+                      class="absolute -top-6 -left-6 w-20 h-20 border-2 border-pink-500/20 rounded-full animate-ping"
+                      style="animation-delay: 0.8s"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Decorative Icons Around Device - Responsive Positioning -->
+              <!-- BTS Tower Icon - Top Left -->
+              <div
+                class="absolute top-14 lg:top-16 left-4 lg:left-8 z-20 animate-pulse"
+              >
+                <div class="relative">
+                  <div
+                    class="absolute inset-0 bg-blue-500/20 rounded-full blur-lg"
+                  ></div>
+                  <svg
+                    class="w-8 h-8 lg:w-12 lg:h-12 text-blue-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Signal/Wave Icon - Top Right -->
+              <div
+                class="absolute top-14 lg:top-16 right-4 lg:right-8 z-20 animate-pulse"
+                style="animation-delay: 0.3s"
+              >
+                <div class="relative">
+                  <div
+                    class="absolute inset-0 bg-green-500/20 rounded-full blur-lg"
+                  ></div>
+                  <svg
+                    class="w-8 h-8 lg:w-12 lg:h-12 text-green-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Electricity/Bolt Icon - Left -->
+              <div
+                class="absolute top-28 lg:top-32 left-2 lg:left-4 z-20 animate-pulse"
+                style="animation-delay: 0.5s"
+              >
+                <div class="relative">
+                  <div
+                    class="absolute inset-0 bg-yellow-500/20 rounded-full blur-lg"
+                  ></div>
+                  <svg
+                    class="w-6 h-6 lg:w-10 lg:h-10 text-yellow-500"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Radio Wave Icon - Right -->
+              <div
+                class="absolute top-28 lg:top-32 right-2 lg:right-4 z-20 animate-pulse"
+                style="animation-delay: 0.2s"
+              >
+                <div class="relative">
+                  <div
+                    class="absolute inset-0 bg-purple-500/20 rounded-full blur-lg"
+                  ></div>
+                  <svg
+                    class="w-6 h-6 lg:w-10 lg:h-10 text-purple-500"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Frequency Wave Lines - Left Side -->
+              <div
+                class="absolute top-40 lg:top-44 left-4 lg:left-6 z-10 opacity-40"
+              >
+                <svg
+                  class="w-12 h-12 lg:w-16 lg:h-16 text-orange-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M4 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Frequency Wave Lines - Right Side -->
+              <div
+                class="absolute top-40 lg:top-44 right-4 lg:right-6 z-10 opacity-40"
+              >
+                <svg
+                  class="w-12 h-12 lg:w-16 lg:h-16 text-red-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M4 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Animated Arrow - Pointing Down to Car -->
+              <div class="flex justify-center my-2 lg:my-4 z-20 relative">
+                <svg
+                  class="w-12 h-12 lg:w-20 lg:h-20 text-orange-500 animate-bounce"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Vehicle Image - Bottom -->
+              <div class="relative z-10">
+                <img
+                  src="Assets/Image/DF/mobil.jpeg"
+                  alt="Tactical Vehicle"
+                  class="w-full h-auto rounded-2xl shadow-2xl border-2 border-white/50"
+                />
+              </div>
+
+              <!-- Connection Lines Animation -->
+              <svg
+                class="absolute inset-0 w-full h-full pointer-events-none z-10"
+                style="overflow: visible"
+              >
+                <defs>
+                  <linearGradient
+                    id="lineGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="0%"
+                      style="stop-color: #f97316; stop-opacity: 0"
+                    />
+                    <stop
+                      offset="50%"
+                      style="stop-color: #f97316; stop-opacity: 1"
+                    />
+                    <stop
+                      offset="100%"
+                      style="stop-color: #f97316; stop-opacity: 0"
+                    />
+                  </linearGradient>
+                </defs>
+                <!-- Animated dashed lines from device to car -->
+                <path
+                  class="animate-dash"
+                  d="M 200 180 Q 200 250 200 320"
+                  stroke="url(#lineGradient)"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-dasharray="10,10"
+                  opacity="0.5"
+                />
+                <path
+                  class="animate-dash"
+                  d="M 220 180 Q 220 250 220 320"
+                  stroke="url(#lineGradient)"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-dasharray="10,10"
+                  opacity="0.3"
+                  style="animation-delay: 0.4s"
+                />
+                <path
+                  class="animate-dash"
+                  d="M 180 180 Q 180 250 180 320"
+                  stroke="url(#lineGradient)"
+                  stroke-width="2"
+                  fill="none"
+                  stroke-dasharray="10,10"
+                  opacity="0.3"
+                  style="animation-delay: 0.2s"
+                />
+              </svg>
+
+              <!-- Feature Badges - Responsive Positioning -->
+              <div
+                class="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 z-30 flex flex-wrap gap-1.5 lg:gap-2"
+              >
+                <div
+                  class="px-2 py-1 lg:px-3 lg:py-1.5 bg-orange-500 text-white text-[10px] lg:text-xs font-bold rounded-lg shadow-lg flex items-center gap-1"
+                >
+                  <svg
+                    class="w-3 h-3 lg:w-4 lg:h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    ></path>
+                  </svg>
+                  <span class="hidden sm:inline">Quick Deploy</span>
+                  <span class="sm:hidden">Quick</span>
+                </div>
+                <div
+                  class="px-2 py-1 lg:px-3 lg:py-1.5 bg-red-500 text-white text-[10px] lg:text-xs font-bold rounded-lg shadow-lg flex items-center gap-1"
+                >
+                  <svg
+                    class="w-3 h-3 lg:w-4 lg:h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    ></path>
+                  </svg>
+                  <span class="hidden sm:inline">Tactical Ready</span>
+                  <span class="sm:hidden">Tactical</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Content -->
+          <div data-aos="fade-left">
+            <h3
+              class="text-3xl lg:text-4xl font-black text-slate-900 uppercase mb-6"
+            >
+              Instalasi <span class="text-orange-500">Kendaraan Taktis</span>
+            </h3>
+            <p class="text-slate-600 text-lg leading-relaxed mb-6 text-justify">
+              Nakula Dianggo dirancang untuk instalasi cepat pada kendaraan
+              taktis, memungkinkan operasi bergerak yang efektif. Sistem dapat
+              dengan mudah dipindahkan dari mode ransel ke konfigurasi terpasang
+              di kendaraan.
+            </p>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3">
+                <div
+                  class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-slate-700"
+                  >Instalasi cepat dan mudah pada berbagai jenis kendaraan</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <div
+                  class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-slate-700"
+                  >Sistem antena eksternal untuk jangkauan optimal</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <div
+                  class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-slate-700"
+                  >Power supply terintegrasi dengan sistem kendaraan</span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <div
+                  class="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="text-slate-700"
+                  >Kontrol dari dalam kendaraan untuk keamanan operator</span
+                >
+              </li>
+            </ul>
+            <div class="flex flex-wrap gap-4">
+              <div
+                class="px-6 py-3 bg-white rounded-xl border-2 border-orange-200 shadow-lg"
+              >
+                <div class="text-2xl font-black text-orange-600">
+                  &lt; 5 min
+                </div>
+                <div class="text-xs font-bold text-slate-500 uppercase">
+                  Waktu Instalasi
+                </div>
+              </div>
+              <div
+                class="px-6 py-3 bg-white rounded-xl border-2 border-red-200 shadow-lg"
+              >
+                <div class="text-2xl font-black text-red-600">100%</div>
+                <div class="text-xs font-bold text-slate-500 uppercase">
+                  Portabilitas
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END OF VEHICLE INSTALLATION SECTION ===================== -->
 
     <!-- =====================================================
          SPESIFIKASI TEKNIS SECTION
@@ -612,10 +1551,10 @@
             Technical Details
           </h4>
           <h2 class="text-4xl lg:text-5xl font-black text-slate-900 uppercase">
-            Spesifikasi <span class="text-blue-600">Teknis</span>
+            Spesifikasi <span class="text-orange-500">Teknis</span>
           </h2>
           <div
-            class="w-20 h-1.5 bg-gradient-to-r from-blue-600 via-violet-600 to-orange-500 mx-auto mt-6 rounded-full"
+            class="w-20 h-1.5 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 mx-auto mt-6 rounded-full"
           ></div>
         </div>
 
@@ -624,141 +1563,13 @@
           data-aos="fade-up"
         >
           <div class="grid lg:grid-cols-2 gap-x-16 gap-y-12">
-            <!-- Dimensi & Desain -->
-            <div>
-              <h3
-                class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
-              >
-                <span class="w-2 h-8 bg-blue-600 rounded-full"></span>
-                Dimensi & Desain
-              </h3>
-              <ul class="space-y-5">
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Wingspan:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >2,500 mm (2.5 Meters)</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Material:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >High Strength Carbon Fiber & EPP</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Max Take-off Weight:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >5.5 kg</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Design:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Aerodynamic Fixed-Wing Configuration</span
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Performa & Operasi -->
-            <div>
-              <h3
-                class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
-              >
-                <span class="w-2 h-8 bg-violet-600 rounded-full"></span>
-                Performa & Operasi
-              </h3>
-              <ul class="space-y-5">
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Cruise Speed:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >60 - 80 km/h</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Flight Time:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Up to 120 minutes</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Range:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >25 km radius</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Data Link:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >900MHz / 2.4GHz Frequency Hopping</span
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Payload & Sensor -->
+            <!-- Frekuensi & SDR -->
             <div>
               <h3
                 class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
               >
                 <span class="w-2 h-8 bg-orange-500 rounded-full"></span>
-                Payload & Sensor
+                Frekuensi & SDR
               </h3>
               <ul class="space-y-5">
                 <li class="flex flex-col gap-1">
@@ -767,11 +1578,11 @@
                       class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Camera Options:</span
+                      >Frequency Range:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Sony A7R IV (61MP) / MicaSense Altum-PT</span
+                    >700 MHz – 2700 MHz</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -780,49 +1591,177 @@
                       class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >GNSS:</span
+                      >SDR Platform:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >RTK/PPK Module Ready</span
+                    >Software Defined Radio Architecture</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
                   <div class="flex items-center gap-2">
                     <span
                       class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Channel:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >4 Channel Parallel Reception</span
+                  >
+                </li>
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Modulation:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >Multi-technology Support (GSM/3G/4G/LTE)</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Deteksi & Pelokalan -->
+            <div>
+              <h3
+                class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
+              >
+                <span class="w-2 h-8 bg-red-500 rounded-full"></span>
+                Deteksi & Pelokalan
+              </h3>
+              <ul class="space-y-5">
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-red-500 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Detection Type:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >IMSI Catcher, Device Fingerprinting</span
+                  >
+                </li>
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-red-500 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Localization:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >TDOA/FDOA based Positioning</span
+                  >
+                </li>
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-red-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
                       >Accuracy:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Centimeter-level positioning</span
+                    >Real-time Direction Finding</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
                   <div class="flex items-center gap-2">
                     <span
-                      class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
+                      class="w-2 h-2 bg-red-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Applications:</span
+                      >Range:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Mapping, Surveying, Monitoring</span
+                    >Up to several kilometers (line of sight)</span
                   >
                 </li>
               </ul>
             </div>
 
-            <!-- Fitur Tambahan -->
+            <!-- Dimensi & Desain -->
+            <div>
+              <h3
+                class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
+              >
+                <span class="w-2 h-8 bg-violet-600 rounded-full"></span>
+                Dimensi & Desain
+              </h3>
+              <ul class="space-y-5">
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Form Factor:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >Portable Backpack Design</span
+                  >
+                </li>
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Weight:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >Lightweight & Field Deployable</span
+                  >
+                </li>
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Antenna:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >4-Element Directional Array</span
+                  >
+                </li>
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Durability:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >Ruggedized for Tactical Operations</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Konektivitas & Kontrol -->
             <div>
               <h3
                 class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
               >
                 <span class="w-2 h-8 bg-green-500 rounded-full"></span>
-                Fitur Tambahan
+                Konektivitas & Kontrol
               </h3>
               <ul class="space-y-5">
                 <li class="flex flex-col gap-1">
@@ -831,11 +1770,11 @@
                       class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Battery:</span
+                      >Control Interface:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Smart Battery System</span
+                    >Remote Control Application</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -844,11 +1783,11 @@
                       class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Wind Resistance:</span
+                      >Connection:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >High Stability in Strong Winds</span
+                    >Wired & Wireless (WiFi/Ethernet)</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -857,11 +1796,11 @@
                       class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Assembly:</span
+                      >Power Supply:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Quick Deploy Design</span
+                    >Vehicle Mount / Portable Battery</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -870,11 +1809,11 @@
                       class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Support:</span
+                      >Operation:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >24/7 Technical Support</span
+                    >Remote Monitoring & Control Capable</span
                   >
                 </li>
               </ul>
