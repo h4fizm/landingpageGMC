@@ -30,26 +30,6 @@ body {
   -webkit-backdrop-filter: blur(20px);
 }
 
-/* Prevent header layout shift on load */
-header.fixed {
-  will-change: auto;
-}
-
-header nav.container {
-  max-width: 100%;
-}
-
-/* Logo container - prevent overflow */
-header .flex.items-center {
-  flex-shrink: 1;
-  min-width: 0;
-}
-
-header .flex.items-center img {
-  max-width: 100%;
-  height: auto;
-}
-
 .nav-link {
   position: relative;
   transition: color 0.3s ease;
@@ -432,8 +412,14 @@ header .flex.items-center img {
   }
 
   /* Prevent logo from overflowing */
+  header .flex.items-center {
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
   header .flex.items-center img {
     max-width: 100%;
+    height: auto;
   }
 
   /* 1. Fix scroll indicator overlapping with buttons */
