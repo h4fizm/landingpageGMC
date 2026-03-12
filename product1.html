@@ -331,7 +331,7 @@
          HERO SECTION
          White Background Version
          ===================================================== -->
-    <section class="pt-32 pb-20 bg-white">
+    <section class="pt-24 pb-12 lg:pt-32 lg:pb-20 bg-white">
       <div class="container mx-auto px-6">
         <!-- Back to Home Button -->
         <a
@@ -359,7 +359,17 @@
         </a>
 
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div data-aos="fade-right" data-aos-duration="1000">
+          <!-- Mobile Image Container (above text on mobile) -->
+          <div class="relative lg:hidden block order-first mb-2 mt-8" data-aos="zoom-in" data-aos-delay="200">
+            <!-- Main Image for Mobile - No Background -->
+            <img
+              src="Assets/Image/ARUNA 25/aruna25_hero.png"
+              alt="Aruna 25 Main View"
+              class="w-full max-w-md mx-auto h-auto relative z-10 floating-img drop-shadow-2xl"
+            />
+          </div>
+
+          <div data-aos="fade-right" data-aos-duration="1000" class="lg:order-first">
             <span
               class="inline-block px-4 py-1 rounded-full bg-blue-600/10 text-blue-600 text-xs font-bold uppercase tracking-widest mb-6 border border-blue-500/30"
             >
@@ -370,8 +380,10 @@
             >
               Aruna <span class="text-orange-500">25</span>
             </h1>
-            <p class="text-xl text-slate-600 leading-relaxed mb-10 max-w-xl">
-              Platform Drone VTOL (vertical take of landing) yang dirancang
+            <p
+              class="text-xl text-slate-600 leading-relaxed mb-10 max-w-xl text-justify"
+            >
+              Platform Drone VTOL (Vertical Take-Off and Landing) yang dirancang
               khusus untuk misi pemetaan area luas dengan efisiensi maksimal dan
               akurasi tingkat tinggi.
             </p>
@@ -409,12 +421,124 @@
             </div>
           </div>
 
-          <div class="relative" data-aos="zoom-in" data-aos-delay="200">
+          <!-- Desktop Image Container (right side on desktop) -->
+          <div class="relative lg:block hidden" data-aos="zoom-in" data-aos-delay="200">
+            <!-- Aviation Background Card -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-blue-500 via-sky-400 to-cyan-300 rounded-3xl transform rotate-3 scale-110 opacity-20"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-orange-500/10 to-transparent rounded-3xl transform -rotate-2 scale-105"
+            ></div>
+
+            <!-- Decorative Elements -->
+            <div
+              class="absolute -top-10 -right-10 w-40 h-40 bg-orange-500/20 rounded-full blur-3xl"
+            ></div>
+            <div
+              class="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl"
+            ></div>
+
+            <!-- Cloud-like shapes -->
+            <div
+              class="absolute top-10 left-10 w-20 h-8 bg-white/30 rounded-full blur-xl"
+            ></div>
+            <div
+              class="absolute bottom-20 right-10 w-24 h-10 bg-white/20 rounded-full blur-xl"
+            ></div>
+
+            <!-- Grid pattern overlay -->
+            <div class="absolute inset-0 rounded-3xl overflow-hidden">
+              <div
+                class="w-full h-full opacity-10"
+                style="
+                  background-image:
+                    linear-gradient(
+                      45deg,
+                      #000 25%,
+                      transparent 25%,
+                      transparent 75%,
+                      #000 75%,
+                      #000
+                    ),
+                    linear-gradient(
+                      45deg,
+                      #000 25%,
+                      transparent 25%,
+                      transparent 75%,
+                      #000 75%,
+                      #000
+                    );
+                  background-size: 20px 20px;
+                  background-position:
+                    0 0,
+                    10px 10px;
+                "
+              ></div>
+            </div>
+
+            <!-- Glow effect -->
             <div class="product-glow"></div>
+
+            <!-- Geometric Design Elements -->
+            <!-- Circles -->
+            <div
+              class="absolute top-8 left-8 w-16 h-16 border-2 border-blue-500/30 rounded-full"
+            ></div>
+            <div
+              class="absolute top-12 left-12 w-12 h-12 border-2 border-orange-500/20 rounded-full"
+            ></div>
+            <div
+              class="absolute bottom-16 right-8 w-24 h-24 border-2 border-violet-500/25 rounded-full"
+            ></div>
+            <div
+              class="absolute bottom-20 right-12 w-16 h-16 border-2 border-cyan-500/20 rounded-full"
+            ></div>
+
+            <!-- Boxes/Squares -->
+            <div
+              class="absolute top-20 -right-8 w-14 h-14 border-2 border-blue-600/25 rotate-12"
+            ></div>
+            <div
+              class="absolute top-24 -right-4 w-10 h-10 border-2 border-orange-500/20 -rotate-6"
+            ></div>
+            <div
+              class="absolute -bottom-6 left-12 w-16 h-16 border-2 border-violet-600/20 rotate-45"
+            ></div>
+            <div
+              class="absolute bottom-8 -left-4 w-10 h-10 border-2 border-cyan-500/25 rotate-12"
+            ></div>
+
+            <!-- Lines -->
+            <div
+              class="absolute top-1/4 -left-16 w-32 h-0.5 bg-gradient-to-r from-transparent via-blue-500/40 to-transparent rotate-12"
+            ></div>
+            <div
+              class="absolute top-2/3 -right-12 w-24 h-0.5 bg-gradient-to-r from-transparent via-orange-500/40 to-transparent -rotate-12"
+            ></div>
+            <div
+              class="absolute bottom-1/4 left-0 w-20 h-0.5 bg-gradient-to-r from-transparent via-violet-500/40 to-transparent rotate-6"
+            ></div>
+            <div
+              class="absolute bottom-1/3 right-1/4 w-28 h-0.5 bg-gradient-to-r from-transparent via-cyan-500/40 to-transparent -rotate-6"
+            ></div>
+
+            <!-- Dotted patterns -->
+            <div class="absolute top-1/2 -left-8 flex flex-col gap-2">
+              <div class="w-2 h-2 bg-blue-500/40 rounded-full"></div>
+              <div class="w-2 h-2 bg-orange-500/40 rounded-full"></div>
+              <div class="w-2 h-2 bg-violet-500/40 rounded-full"></div>
+            </div>
+            <div class="absolute top-1/3 -right-6 flex flex-col gap-2">
+              <div class="w-2 h-2 bg-cyan-500/40 rounded-full"></div>
+              <div class="w-2 h-2 bg-blue-500/40 rounded-full"></div>
+            </div>
+
+            <!-- Main Image - Larger Size -->
             <img
-              src="Assets/Image/aruna25.jpg"
+              src="Assets/Image/ARUNA 25/aruna25_hero.png"
               alt="Aruna 25 Main View"
-              class="w-full h-auto relative z-10 floating-img"
+              class="w-full max-w-2xl mx-auto h-auto relative z-10 floating-img drop-shadow-2xl"
             />
           </div>
         </div>
@@ -424,18 +548,106 @@
 
     <!-- =====================================================
          DESKRIPSI PRODUK SECTION
-         Image Left, Text Right Layout
+         Image Slider Layout
          ===================================================== -->
-    <section class="py-24 bg-slate-50">
+    <section class="py-12 lg:py-24 bg-slate-50">
       <div class="container mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div data-aos="fade-right">
-            <img
-              src="Assets/Image/aruna45.jpg"
-              alt="Aruna 25 Detail"
-              class="rounded-2xl shadow-2xl w-full"
-            />
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <!-- Image Slider -->
+          <div data-aos="fade-right" class="relative">
+            <div class="product-slider-container">
+              <button
+                class="slider-nav-btn slider-nav-prev"
+                aria-label="Previous image"
+              >
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <div class="slider-images-wrapper">
+                <div class="slider-image active">
+                  <img
+                    src="Assets/Image/ARUNA 25/aruna25_main.jpg"
+                    alt="Aruna 25 - Main View"
+                  />
+                </div>
+                <div class="slider-image">
+                  <img
+                    src="Assets/Image/ARUNA 25/aruna25.png"
+                    alt="Aruna 25 - View 1"
+                  />
+                </div>
+                <div class="slider-image">
+                  <img
+                    src="Assets/Image/ARUNA 25/aruna25_2.png"
+                    alt="Aruna 25 - Top View"
+                  />
+                </div>
+                <div class="slider-image">
+                  <img
+                    src="Assets/Image/ARUNA 25/aruna25_3.png"
+                    alt="Aruna 25 - Side View"
+                  />
+                </div>
+                <div class="slider-image">
+                  <img
+                    src="Assets/Image/ARUNA 25/aruna25_4.png"
+                    alt="Aruna 25 - Front View"
+                  />
+                </div>
+              </div>
+
+              <button
+                class="slider-nav-btn slider-nav-next"
+                aria-label="Next image"
+              >
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+
+              <div class="slider-dots">
+                <button
+                  class="slider-dot active"
+                  data-index="0"
+                  aria-label="Go to slide 1"
+                ></button>
+                <button
+                  class="slider-dot"
+                  data-index="1"
+                  aria-label="Go to slide 2"
+                ></button>
+                <button
+                  class="slider-dot"
+                  data-index="2"
+                  aria-label="Go to slide 3"
+                ></button>
+                <button
+                  class="slider-dot"
+                  data-index="3"
+                  aria-label="Go to slide 4"
+                ></button>
+                <button
+                  class="slider-dot"
+                  data-index="4"
+                  aria-label="Go to slide 5"
+                ></button>
+              </div>
+            </div>
           </div>
+
+          <!-- Text Content -->
           <div data-aos="fade-left">
             <h4 class="text-blue-600 font-bold uppercase tracking-widest mb-4">
               Product Overview
@@ -445,7 +657,7 @@
             >
               Aruna <span class="text-orange-500">25</span>
             </h2>
-            <p class="text-slate-600 text-lg leading-relaxed mb-8">
+            <p class="text-slate-600 text-lg leading-relaxed mb-8 text-justify">
               ARUNA 25 adalah platform UAV VTOL (Vertical Take-Off and Landing)
               hasil inovasi tim teknis nasional yang dirancang khusus untuk misi
               pemetaan area luas dengan efisiensi maksimal dan akurasi tingkat
@@ -454,23 +666,51 @@
               landasan pacu dengan keunggulan aerodinamika pesawat sayap tetap
               (fixed-wing) untuk mencapai daya tahan terbang yang optimal.
             </p>
-            <p class="text-slate-600 text-lg leading-relaxed mb-8">
+            <p class="text-slate-600 text-lg leading-relaxed mb-8 text-justify">
               Dengan desain struktur yang ringan namun kokoh serta integrasi
               sistem avionik yang presisi, ARUNA 25 menjadi solusi andal dalam
               pengambilan data spasial dan survei udara di berbagai kondisi
               medan yang menantang.
             </p>
-            <div class="grid grid-cols-2 gap-6 pt-6 border-t border-slate-200">
+            <div
+              class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-slate-200"
+            >
               <div>
-                <div class="text-3xl font-black text-blue-600 mb-1">120+</div>
+                <div class="text-2xl sm:text-3xl font-black text-blue-600 mb-1">
+                  13.83
+                </div>
                 <div class="text-xs font-bold text-slate-500 uppercase">
-                  Menit Flight Time
+                  Stall Speed (m/s)
                 </div>
               </div>
               <div>
-                <div class="text-3xl font-black text-violet-600 mb-1">25+</div>
+                <div
+                  class="text-2xl sm:text-3xl font-black text-violet-600 mb-1"
+                >
+                  21.01
+                </div>
                 <div class="text-xs font-bold text-slate-500 uppercase">
-                  Km Jangkauan
+                  Cruise Speed (m/s)
+                </div>
+              </div>
+              <div>
+                <div
+                  class="text-2xl sm:text-3xl font-black text-orange-600 mb-1"
+                >
+                  22.88
+                </div>
+                <div class="text-xs font-bold text-slate-500 uppercase">
+                  Loiter Speed (m/s)
+                </div>
+              </div>
+              <div>
+                <div
+                  class="text-2xl sm:text-3xl font-black text-emerald-600 mb-1"
+                >
+                  15.4
+                </div>
+                <div class="text-xs font-bold text-slate-500 uppercase">
+                  Max Climb (m/s)
                 </div>
               </div>
             </div>
@@ -502,14 +742,14 @@
           class="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-200"
           data-aos="fade-up"
         >
-          <div class="grid lg:grid-cols-2 gap-x-16 gap-y-12">
-            <!-- Dimensi & Desain -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+            <!-- Dimensi -->
             <div>
               <h3
                 class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
               >
                 <span class="w-2 h-8 bg-blue-600 rounded-full"></span>
-                Dimensi & Desain
+                Dimensi
               </h3>
               <ul class="space-y-5">
                 <li class="flex flex-col gap-1">
@@ -518,11 +758,11 @@
                       class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Wingspan:</span
+                      >AUW:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >2,500 mm (2.5 Meters)</span
+                    >12.00 Kg</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -531,51 +771,38 @@
                       class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Material:</span
+                      >Wing Loading:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >High Strength Carbon Fiber & EPP</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Max Take-off Weight:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >5.5 kg</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Design:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Aerodynamic Fixed-Wing Configuration</span
+                    >175.7 N/m²</span
                   >
                 </li>
               </ul>
             </div>
 
-            <!-- Performa & Operasi -->
+            <!-- Performa -->
             <div>
               <h3
                 class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
               >
                 <span class="w-2 h-8 bg-violet-600 rounded-full"></span>
-                Performa & Operasi
+                Performa
               </h3>
               <ul class="space-y-5">
+                <li class="flex flex-col gap-1">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
+                    ></span>
+                    <span class="font-bold text-slate-800 text-sm md:text-base"
+                      >Stall Speed:</span
+                    >
+                  </div>
+                  <span class="text-slate-600 text-sm md:text-base ml-4"
+                    >13.83 m/s</span
+                  >
+                </li>
                 <li class="flex flex-col gap-1">
                   <div class="flex items-center gap-2">
                     <span
@@ -586,7 +813,7 @@
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >60 - 80 km/h</span
+                    >21.01 m/s</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -595,11 +822,11 @@
                       class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Flight Time:</span
+                      >Loiter Speed:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Up to 120 minutes</span
+                    >22.88 m/s</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -608,88 +835,11 @@
                       class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Range:</span
+                      >Max Climb:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >25 km radius</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Data Link:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >900MHz / 2.4GHz Frequency Hopping</span
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- Payload & Sensor -->
-            <div>
-              <h3
-                class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
-              >
-                <span class="w-2 h-8 bg-orange-500 rounded-full"></span>
-                Payload & Sensor
-              </h3>
-              <ul class="space-y-5">
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Camera Options:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Sony A7R IV (61MP) / MicaSense Altum-PT</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >GNSS:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >RTK/PPK Module Ready</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Accuracy:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Centimeter-level positioning</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-orange-500 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Applications:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Mapping, Surveying, Monitoring</span
+                    >15.4 m/s</span
                   >
                 </li>
               </ul>
@@ -714,7 +864,7 @@
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Smart Battery System</span
+                    >500 Wh</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -723,11 +873,11 @@
                       class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Wind Resistance:</span
+                      >Efficiency:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >High Stability in Strong Winds</span
+                    >0.65</span
                   >
                 </li>
                 <li class="flex flex-col gap-1">
@@ -736,24 +886,11 @@
                       class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
                     ></span>
                     <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Assembly:</span
+                      >CL<sub class="text-xs">max</sub>:</span
                     >
                   </div>
                   <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >Quick Deploy Design</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Support:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >24/7 Technical Support</span
+                    >1.5</span
                   >
                 </li>
               </ul>
