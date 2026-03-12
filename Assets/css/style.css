@@ -262,6 +262,19 @@ header .flex.items-center img {
   }
 }
 
+/* Desktop logo - restore original size for desktop only */
+@media (min-width: 769px) {
+  header .flex.items-center img[alt="GMC Title"] {
+    height: 1.75rem !important;
+    max-width: none !important;
+  }
+
+  header .flex.items-center img[alt="GMC Logo"] {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+}
+
 /* Mobile Dropdown */
 .mobile-dropdown {
   border-bottom: 1px solid #e2e8f0;
