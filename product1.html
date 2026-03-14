@@ -403,17 +403,17 @@
                 class="flex flex-col items-center sm:items-start text-center sm:text-left"
               >
                 <div class="text-xs uppercase text-slate-500 font-bold mb-1">
-                  AUW
+                  Weight (AUW)
                 </div>
-                <div class="text-slate-900 font-bold text-2xl">12.00 Kg</div>
+                <div class="text-slate-900 font-bold text-2xl">12 kg</div>
               </div>
               <div
                 class="flex flex-col items-center sm:items-start text-center sm:text-left"
               >
                 <div class="text-xs uppercase text-slate-500 font-bold mb-1">
-                  Wing Loading
+                  Wingspan
                 </div>
-                <div class="text-slate-900 font-bold text-2xl">175.7 N/m^2</div>
+                <div class="text-slate-900 font-bold text-2xl">2500 mm</div>
               </div>
             </div>
 
@@ -636,12 +636,40 @@
                 <div
                   class="text-[10px] font-bold text-slate-400 uppercase mb-1"
                 >
-                  Stall Speed
+                  Duration
                 </div>
                 <div class="text-2xl font-black text-blue-600">
-                  13.83<span
+                  1<span class="text-xs ml-1 font-normal text-slate-400"
+                    >Hours</span
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="text-[10px] font-bold text-slate-400 uppercase mb-1"
+                >
+                  Wind Resist
+                </div>
+                <div class="text-2xl font-black text-violet-600">
+                  8<span
                     class="text-xs ml-1 font-normal text-slate-400 text-lowercase"
                     >m/s</span
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div
+                  class="text-[10px] font-bold text-slate-400 uppercase mb-1"
+                >
+                  Ceiling
+                </div>
+                <div class="text-2xl font-black text-orange-600">
+                  2500<span class="text-xs ml-1 font-normal text-slate-400"
+                    >m</span
                   >
                 </div>
               </div>
@@ -653,38 +681,8 @@
                 >
                   Cruise Speed
                 </div>
-                <div class="text-2xl font-black text-violet-600">
-                  21.01<span
-                    class="text-xs ml-1 font-normal text-slate-400 text-lowercase"
-                    >m/s</span
-                  >
-                </div>
-              </div>
-              <div
-                class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div
-                  class="text-[10px] font-bold text-slate-400 uppercase mb-1"
-                >
-                  Loiter Speed
-                </div>
-                <div class="text-2xl font-black text-orange-600">
-                  22.88<span
-                    class="text-xs ml-1 font-normal text-slate-400 text-lowercase"
-                    >m/s</span
-                  >
-                </div>
-              </div>
-              <div
-                class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div
-                  class="text-[10px] font-bold text-slate-400 uppercase mb-1"
-                >
-                  Max Climb
-                </div>
                 <div class="text-2xl font-black text-emerald-600">
-                  15.4<span
+                  20<span
                     class="text-xs ml-1 font-normal text-slate-400 text-lowercase"
                     >m/s</span
                   >
@@ -698,17 +696,17 @@
     <!-- ===================== END OF DESKRIPSI PRODUK SECTION ===================== -->
 
     <!-- =====================================================
-         SPESIFIKASI TEKNIS SECTION
-         Bullet Point List Format
+         GENERAL SPECIFICATION SECTION
+         List Format with Cool Lines
          ===================================================== -->
     <section id="specs" class="py-24 bg-white">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16" data-aos="fade-up">
           <h4 class="text-orange-500 font-bold uppercase tracking-widest mb-4">
-            Technical Details
+            General Specification
           </h4>
           <h2 class="text-4xl lg:text-5xl font-black text-slate-900 uppercase">
-            Spesifikasi <span class="text-blue-600">Teknis</span>
+            Spesifikasi <span class="text-blue-600">Umum</span>
           </h2>
           <div
             class="w-20 h-1.5 bg-gradient-to-r from-blue-600 via-violet-600 to-orange-500 mx-auto mt-6 rounded-full"
@@ -716,162 +714,226 @@
         </div>
 
         <div
-          class="bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-200"
+          class="bg-slate-50 rounded-3xl p-6 md:p-10 border border-slate-200"
           data-aos="fade-up"
         >
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
-            <!-- Dimensi -->
-            <div>
-              <h3
-                class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
+          <div class="space-y-3">
+            <!-- Specification Item -->
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-blue-500 to-cyan-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Duration</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+                >- 1 Hours*</span
               >
-                <span class="w-2 h-8 bg-blue-600 rounded-full"></span>
-                Dimensi
-              </h3>
-              <ul class="space-y-5">
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >AUW:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >12.00 Kg</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-blue-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Wing Loading:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >175.7 N/m²</span
-                  >
-                </li>
-              </ul>
             </div>
 
-            <!-- Performa -->
-            <div>
-              <h3
-                class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-orange-500 to-amber-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Weight (AUW)</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+                >- 12 kg</span
               >
-                <span class="w-2 h-8 bg-violet-600 rounded-full"></span>
-                Performa
-              </h3>
-              <ul class="space-y-5">
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Stall Speed:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >13.83 m/s</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Cruise Speed:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >21.01 m/s</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Loiter Speed:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >22.88 m/s</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-violet-600 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Max Climb:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >15.4 m/s</span
-                  >
-                </li>
-              </ul>
             </div>
 
-            <!-- Fitur Tambahan -->
-            <div>
-              <h3
-                class="text-xl font-black text-slate-900 uppercase mb-8 flex items-center gap-3"
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-violet-500 to-purple-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Payload</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+                >- Include</span
               >
-                <span class="w-2 h-8 bg-green-500 rounded-full"></span>
-                Fitur Tambahan
-              </h3>
-              <ul class="space-y-5">
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Battery:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >500 Wh</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >Efficiency:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >0.65</span
-                  >
-                </li>
-                <li class="flex flex-col gap-1">
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"
-                    ></span>
-                    <span class="font-bold text-slate-800 text-sm md:text-base"
-                      >CL<sub class="text-xs">max</sub>:</span
-                    >
-                  </div>
-                  <span class="text-slate-600 text-sm md:text-base ml-4"
-                    >1.5</span
-                  >
-                </li>
-              </ul>
             </div>
+
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-emerald-500 to-teal-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Dimension</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+              >
+                2500 mm</span
+              >
+            </div>
+
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-cyan-500 to-sky-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Wingspan</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+              >
+                2500 mm</span
+              >
+            </div>
+
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-amber-500 to-yellow-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Wind Resistance</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+              >
+                8 m/s</span
+              >
+            </div>
+
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-pink-500 to-rose-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Comm. System</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+              >
+                1800 Mhz / 900 Mhz / 1,4 Ghz*</span
+              >
+            </div>
+
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-indigo-500 to-blue-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Ceiling Altitude</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+              >
+                Up to 2500 m*</span
+              >
+            </div>
+
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-red-500 to-orange-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Cruise Speed</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+              >
+                20 m/s</span
+              >
+            </div>
+
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-teal-500 to-emerald-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Takeoff & Landing</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+              >
+                Vertical Auto (8 x 8 m)</span
+              >
+            </div>
+
+            <div
+              class="spec-item flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 py-3 border-b border-slate-200 hover:border-orange-500 transition-colors group"
+            >
+              <div class="flex items-center gap-3 flex-shrink-0">
+                <div
+                  class="w-1 h-6 bg-gradient-to-b from-purple-500 to-pink-400 rounded-full group-hover:h-8 transition-all"
+                ></div>
+                <span
+                  class="text-xs font-medium text-slate-600 uppercase tracking-wide min-w-[160px]"
+                  >Deployment Time</span
+                >
+              </div>
+              <span
+                class="text-sm text-slate-700 sm:text-left text-justify sm:ml-auto"
+              >
+                ± 20 min.</span
+              >
+            </div>
+          </div>
+
+          <!-- Disclaimer -->
+          <div
+            class="mt-6 p-3 bg-orange-50 border-l-4 border-orange-500 rounded-r-lg"
+          >
+            <p class="text-xs text-orange-700 italic">
+              <span class="font-medium">*Note:</span> Dipengaruhi kondisi
+              lingkungan, cuaca, temperatur dan kepadatan udara
+            </p>
           </div>
         </div>
 
@@ -889,7 +951,7 @@
         </div>
       </div>
     </section>
-    <!-- ===================== END OF SPESIFIKASI TEKNIS SECTION ===================== -->
+    <!-- ===================== END OF GENERAL SPECIFICATION SECTION ===================== -->
 
     <!-- =====================================================
          FOOTER
