@@ -86,19 +86,19 @@ sliderContainers.forEach(container => {
   const prevBtn = container.querySelector('.slider-nav-prev');
   const nextBtn = container.querySelector('.slider-nav-next');
   let currentIndex = 0;
-  
+
   // Function to update slider
   function updateSlider(index) {
     // Remove active class from all
     images.forEach(img => img.classList.remove('active'));
     dots.forEach(dot => dot.classList.remove('active'));
-    
+
     // Add active class to current
     images[index].classList.add('active');
     dots[index].classList.add('active');
     currentIndex = index;
   }
-  
+
   // Next button
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
@@ -106,7 +106,7 @@ sliderContainers.forEach(container => {
       updateSlider(newIndex);
     });
   }
-  
+
   // Previous button
   if (prevBtn) {
     prevBtn.addEventListener('click', () => {
@@ -114,14 +114,14 @@ sliderContainers.forEach(container => {
       updateSlider(newIndex);
     });
   }
-  
+
   // Dot navigation
   dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
       updateSlider(index);
     });
   });
-  
+
   // Auto-play slider (optional - every 5 seconds)
   const autoPlayInterval = setInterval(() => {
     if (container.matches(':hover')) {
@@ -131,7 +131,7 @@ sliderContainers.forEach(container => {
     const newIndex = (currentIndex + 1) % images.length;
     updateSlider(newIndex);
   }, 5000);
-  
+
   // Clean up interval on page unload
   window.addEventListener('beforeunload', () => {
     clearInterval(autoPlayInterval);
